@@ -1,0 +1,204 @@
+/**************************/
+/* CATALOG */
+/**************************/
+
+.container-catalog {
+  width: 100%;
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+  background-color: #ede6e6;
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+}
+
+.catalog-window {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3.2rem;
+  margin: 3.2rem 0 6.4rem 0;
+}
+
+.catalog-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  transition: all 0.35s ease;
+  color: #4b0402;
+  width: 100%; /* Cambiado de 35rem a 100% */
+  height: auto; /* Cambiado de 50rem a auto */
+}
+
+.catalog-card:hover {
+  transform: translateY(-8px);
+}
+
+.catalog-img {
+  width: 100%;
+  height: auto; /* Cambiado de 35rem a auto */
+  aspect-ratio: 3/4; /* Mantiene proporción 3:4 (como un perfume vertical) */
+  object-fit: contain; /* Cambiado de cover a contain */
+  display: block;
+  transition: transform 0.45s ease;
+  background-color: #f5f0f0; /* Fondo de respaldo */
+}
+
+.catalog-card:hover .catalog-img {
+  transform: scale(1.05);
+}
+
+.catalog-content {
+  padding: 1.6rem 2rem 0.8rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+
+.ctg-card-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #4b0402;
+  text-transform: uppercase;
+  text-align: left;
+  margin: 0 0 0.4rem 0;
+  line-height: 1.3;
+}
+
+.ctg-card-price {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #4b0402;
+  padding: 0 2rem 2rem;
+  background-color: #ffffff;
+  margin: 0;
+  text-align: center;
+}
+
+/* Añadir subtítulo opcional */
+.ctg-card-subtitle {
+  font-size: 1.4rem;
+  color: #6b7280;
+  margin: 0 0 0.8rem 0;
+  text-align: left;
+}
+
+/**************************/
+/* CATALOG - RESPONSIVE */
+/**************************/
+
+/* Tablets grandes: 3 columnas */
+@media (max-width: 64em) {
+  /* 1024px */
+  .catalog-window {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.8rem;
+  }
+}
+
+/* Tablets: 2 columnas */
+@media (max-width: 48em) {
+  /* 768px */
+  .catalog-window {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.4rem;
+  }
+
+  .catalog-img {
+    height: 20rem;
+  }
+
+  .ctg-card-title {
+    font-size: 1.6rem;
+  }
+
+  .ctg-card-price {
+    font-size: 2rem;
+  }
+
+  .cart-outline {
+    display: none;
+  }
+}
+
+/* Móviles grandes: 2 columnas */
+@media (max-width: 34em) {
+  /* 544px */
+
+  .container-catalog {
+    padding: 0 1.6rem;
+  }
+
+  .catalog-window {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.6rem;
+  }
+
+  .catalog-img {
+    height: 16rem;
+  }
+
+  .catalog-content {
+    padding: 1.2rem 1.2rem 0.4rem;
+  }
+
+  .ctg-card-title {
+    font-size: 1.4rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .ctg-card-price {
+    font-size: 1.8rem;
+    padding: 0 1.2rem 1.2rem;
+  }
+
+  .cart-icon {
+    display: none;
+  }
+}
+
+/* Móviles muy pequeños: 1 columna */
+@media (max-width: 25em) {
+  /* 400px */
+  .catalog-window {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .catalog-img {
+    height: 22rem;
+  }
+
+  .ctg-card-title {
+    font-size: 1.8rem;
+  }
+
+  .ctg-card-price {
+    font-size: 2.4rem;
+  }
+
+  .cart-outline {
+    display: none;
+  }
+}
+
+/* Ajustes para títulos en catálogo */
+.container-catalog .heading-primary {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.container-catalog .heading-secondary {
+  margin-bottom: 3.2rem;
+  margin-top: 1.6rem;
+  text-align: center;
+}
+
+.container-catalog .red {
+  color: #4b0402 !important;
+}
+
+.container-catalog .grid {
+  margin-bottom: 0;
+}

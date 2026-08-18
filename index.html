@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="AQUAR - PILAR DE VIDA"
+      content="Sitio web sobre el negocio de una planta purificadora de agua. Contiene información relevante sobre los productos del negocio."
+    />
+
+    <!-- Always include this line of code!!! -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="img/favicon.png" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+    <script defer src="js/script.js"></script>
+    <!-- <script src="js/perfums.js"></script>
+    <script src="js/render.js"></script> -->
+
+    <title>Austral Essence</title>
+  </head>
+
+  <body>
+    <div class="nav-hero-container">
+      <header class="header">
+        <a href="#">
+          <img class="logo" alt="Negocio logo" src="img/logo.png" />
+        </a>
+
+        <nav class="main-nav">
+          <ul class="main-nav-list">
+            <li><a class="main-nav-link" href="#how">Inicio</a></li>
+            <li><a class="main-nav-link" href="catalog.html">Catálogo</a></li>
+            <li><a class="main-nav-link" href="#services">Información</a></li>
+            <li><a class="main-nav-link" href="#contact">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <button class="btn-mobile-nav">
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
+
+        <a href="#" class="nav-icon cart-icon">
+          <ion-icon name="cart-outline"></ion-icon>
+        </a>
+      </header>
+
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="heading-primary hero-title">
+              Eleva tus sentidos con nuestra exquisita selección de fragancias
+            </h1>
+
+            <div class="hero-btn-container">
+              <a href="#cta" class="btn btn--full margin-right-sm"
+                >Descubre Fragancias
+              </a>
+            </div>
+          </div>
+          <div class="hero-img-box"></div>
+        </div>
+      </section>
+    </div>
+
+    <section class="section-brands">
+      <div class="container">
+        <div class="brands-grid">
+          <div class="brand-card">
+            <img src="img/brands/prada.jpg" alt="Prada" />
+          </div>
+
+          <div class="brand-card">
+            <img src="img/brands/versace.jpg" alt="Versace" />
+          </div>
+
+          <div class="brand-card">
+            <img src="img/brands/yves.jpg" alt="YST" />
+          </div>
+
+          <div class="brand-card">
+            <img
+              src="img/brands/parfums de marly.jfif"
+              alt="Parfums de Marly"
+            />
+          </div>
+
+          <div class="brand-card">
+            <img src="img/brands/xerjoff.png" alt="Xerjoff" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-services" id="services">
+      <div class="container">
+        <h2 class="heading-secondary">Productos Populares</h2>
+
+        <div class="services-slider">
+          <button class="slider-btn slider-btn-left">
+            <ion-icon name="chevron-back-outline"></ion-icon>
+          </button>
+
+          <div class="slider-window">
+            <div class="slider-track">
+              <!-- Aquí se encarga Javascript God -->
+            </div>
+          </div>
+
+          <button class="slider-btn slider-btn-right">
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-how" id="how">
+      <div class="container">
+        <h2 class="heading-secondary white">
+          La fragancia en tus manos en 3 simples pasos
+        </h2>
+      </div>
+
+      <div class="container grid grid--2-cols grid--center-v">
+        <!-- STEP 01 -->
+        <div class="step-img-box">
+          <img
+            src="img/app/section-how-1.png"
+            class="step-img"
+            alt="iPhone app
+            preferences selection screen"
+          />
+        </div>
+
+        <div class="step-text-box">
+          <p class="step-number">01</p>
+          <h3 class="heading-tertiary white">Elige tu fragancia</h3>
+          <p class="step-description">
+            Consulta tus fragancias preferidas en nuestra sección de catálogo
+          </p>
+        </div>
+
+        <!-- STEP 02 -->
+        <div class="step-img-box">
+          <img
+            src="img/app/section-how-2.png"
+            class="step-img"
+            alt="iPhone app
+            meal approving plan screen"
+          />
+        </div>
+        <div class="step-text-box">
+          <p class="step-number">02</p>
+          <h3 class="heading-tertiary white">
+            Escríbenos por WhatsApp para confirmar stock y tiempo de entrega
+          </h3>
+          <p class="step-description">
+            O accede a nuestros contactos en redes sociales
+          </p>
+        </div>
+
+        <!-- STEP 03 -->
+        <div class="step-img-box">
+          <img
+            src="img/app/section-how-3.png"
+            class="step-img"
+            alt="iPhone app
+            delivery screen"
+          />
+        </div>
+        <div class="step-text-box">
+          <p class="step-number">03</p>
+          <h3 class="heading-tertiary white">Recibe la fragancia en tu casa</h3>
+          <p class="step-description">
+            Uno de nuestros asesores se pondrá de acuerdo con usted para la
+            entrega.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-featured">
+        <div class="container grid grid--4-cols">
+          <div class="feature">
+            <ion-icon class="feature-icon" name="medal-outline"></ion-icon>
+            <p class="feature-title">¿Los perfumes son originales?</p>
+            <p class="feature-text">
+              Trabajamos únicamente con fragancias originales de marcas reconocidas para garantizar autenticidad, calidad y una experiencia única
+            </p>
+          </div>
+          <div class="feature">
+            <ion-icon class="feature-icon" name="star-outline"></ion-icon>
+            <p class="feature-title">¿Cuándo recibiré mi pedido?</p>
+            <p class="feature-text">
+             Realizamos entregas rápidas y seguras para que disfrutes tu fragancia en el menor tiempo posible.
+            </p>
+          </div>
+          <div class="feature">
+            <ion-icon
+              class="feature-icon"
+              name="accessibility-outline"
+            ></ion-icon>
+            <p class="feature-title">¿Puedo confiar en la empresa?</p>
+            <p class="feature-text">
+              Nos comprometemos a ofrecer un servicio transparente, atención personalizada y productos cuidadosamente seleccionados para nuestros clientes.
+            </p>
+          </div>
+          <div class="feature">
+            <ion-icon
+              class="feature-icon"
+              name="shield-checkmark-outline"
+            ></ion-icon>
+            <p class="feature-title">¿Es fácil hacer un pedido?</p>
+            <p class="feature-text">
+              Elige tu perfume favorito, escríbenos por WhatsApp y confirma tu pedido en pocos minutos. Nosotros nos encargamos del resto.
+
+
+            </p>
+          </div>
+        </div>
+      </section>
+      
+      <a
+        href="https://w.app/uwqazv"
+        class="whatsapp-btn"
+        target="_blank"
+        aria-label="Contactar por WhatsApp"
+      >
+ 
+
+      
+      <ion-icon name="logo-whatsapp"></ion-icon>
+    </a>
+    <footer class="footer" id="contact">
+
+      <div class="container grid grid--footer">
+
+        
+        <div class="logo-col">
+          <a href="#" class="footer-logo">
+            <img class="logo" alt="Omnifood logo" src="img/logo.png" />
+          </a>
+
+          <div>
+          <ul class="social-links">
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="https://wa.link/pkm6du"
+                ><ion-icon class="social-icon" name="logo-whatsapp"></ion-icon
+              ></a>
+            </li>
+          </ul>
+          </div>
+
+          
+          
+          <p class="copyright">
+            Copyright &copy; <span class="year">2026</span> by Austral Essence.
+            Todos los derechos reservados
+          </p>
+
+        </div>
+
+        <div class="address-col">
+          <p class="footer-heading">Contáctanos</p>
+          <address class="contacts">
+            <p class="address">Urbanización la Colina </p>
+            <p>
+              <a class="footer-link" href="https://wa.link/pkm6du"> +593 98 458 7166
+              <a />
+              <a class="footer-link" href="mailto:aquarpilardevida@gmail.com"
+                >ventas@australessence.com</a
+              >
+            </p>
+          </address>
+        </div>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Cuenta</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Crea una cuenta</a></li>
+            <li><a class="footer-link" href="#">Regístrate</a></li>
+            <li><a class="footer-link" href="#">Aplicación iOS </a></li>
+            <li><a class="footer-link" href="#">Aplicación Android</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Compañía</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Sobre Austral Essence</a></li>
+            <li><a class="footer-link" href="#">Trabaja con nostros</a></li>
+            <li><a class="footer-link" href="#">Socios</a></li>
+            <li><a class="footer-link" href="#">Carreras</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Recursos</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Directorio de Servicios </a></li>
+            <li><a class="footer-link" href="#">Centro de Ayuda</a></li>
+            <li><a class="footer-link" href="#">Términos y condiciones</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+      <footer class="diventax">
+      <p>© 2026 Austral Essence. Desarrollado por DiventaX</p>
+    </footer> 
+
+    <script src="js/perfums.js"></script>
+    <script src="js/render.js"></script>
+  </body>
+</html>
