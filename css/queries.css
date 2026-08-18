@@ -9,10 +9,6 @@
     max-width: 120rem;
   }
 
-  .heading-primary {
-    font-size: 4.4rem;
-  }
-
   .gallery {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -66,6 +62,10 @@
   html {
     /* 8px / 16px = 0.5 = 50% */
     font-size: 50%;
+  }
+
+  .section-hero {
+    margin-bottom: 10rem;
   }
 
   .hero {
@@ -193,6 +193,16 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .section-hero {
+    margin-bottom: 10rem;
+  }
+
+  .hero {
+    min-height: 100vh;
+    align-items: center;
+    margin: 0 auto;
+  }
+
   .diets {
     grid-column: 1 / -1;
     justify-self: center;
@@ -265,6 +275,10 @@
     row-gap: 4.8rem;
   }
 
+  .section-hero {
+    margin-bottom: 10rem;
+  }
+
   .grid--2-cols,
   .grid--3-cols,
   .grid--4-cols {
@@ -277,32 +291,25 @@
     padding: 2.4rem 1.6rem;
   }
 
-  .heading-primary {
-    font-size: 6rem;
-  }
-
   .main-nav-link:link,
   .main-nav-link:visited {
     font-size: 3rem;
-    color: #4b0402; /* Color del texto de los enlaces */
-    /* Cambiar a: */
-    /* color: #ffffff; */ /* Blanco */
-    /* color: #000000; */ /* Negro */
-    /* color: #ffd700; */ /* Dorado */
+    color: #4b0402;
   }
 
-  .section-hero {
-    max-heights: 100vh;
-  }
-
-  .hero {
-    min-height: 100vh;
+  .hero-btn-container {
+    flex-direction: column;
     align-items: center;
+    width: 100%;
   }
 
-  .hero-title {
-    margin-top: 25rem;
-  }
+  /* ✅ NO MODIFICAMOS el tamaño del btn */
+  /* .btn {
+    font-size: 2rem;
+    padding: 1.6rem 2.4rem;
+    width: 100%;
+    max-width: 28rem;
+  } */
 
   .brands-grid {
     grid-template-columns: 1fr;
@@ -314,7 +321,7 @@
 
   .step-img-box {
     display: flex;
-    align-items: center; /* vertical */
+    align-items: center;
     justify-content: center;
   }
 
@@ -322,8 +329,25 @@
     width: 40%;
   }
 
-  .cart-icon {
-    display: none;
+  /* Ocultar carrito en móvil */
+  .nav-icon {
+    display: none !important;
+  }
+}
+
+/* ✅ Móviles muy pequeños */
+@media (max-width: 25em) {
+  .hero-title {
+    font-size: 5rem;
+  }
+
+  .section-hero {
+    margin-bottom: 20rem;
+  }
+
+  .btn {
+    font-size: 1.6rem;
+    padding: 1.2rem 2rem;
   }
 }
 

@@ -161,6 +161,7 @@
 /* Móviles muy pequeños: 1 columna */
 @media (max-width: 25em) {
   /* 400px */
+
   .catalog-window {
     grid-template-columns: 1fr;
     gap: 2rem;
