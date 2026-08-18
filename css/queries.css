@@ -339,6 +339,7 @@
 @media (max-width: 25em) {
   .hero-title {
     font-size: 5rem;
+    margin-top: 20rem;
   }
 
   .section-hero {
