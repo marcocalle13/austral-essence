@@ -187,7 +187,7 @@
 
 .brand-card {
   background: #fff;
-  border-radius: 1.8rem;
+
   padding: 3rem;
   display: flex;
   justify-content: center;
@@ -222,6 +222,101 @@
   opacity: 1;
 }
 
+/**************************/
+/* CATEGORIES */
+/**************************/
+
+.container-categories {
+  padding: 0 15rem;
+  background-color: #ede6e6;
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.categorie-card {
+  height: 50rem;
+  width: 37rem;
+  padding: 3rem 2rem;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 1rem;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.05);
+  transition: all 0.35s;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.man-conver,
+.woman-conver,
+.unisex-conver {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  z-index: 0;
+}
+
+.man-conver {
+  background-image:
+    linear-gradient(rgba(34, 34, 34, 0.6), rgba(34, 34, 34, 0.6)),
+    url("../img/categories/men.webp");
+}
+
+.woman-conver {
+  background-image:
+    linear-gradient(rgba(34, 34, 34, 0.6), rgba(34, 34, 34, 0.6)),
+    url("../img/categories/women.webp");
+}
+
+.unisex-conver {
+  background-image:
+    linear-gradient(rgba(34, 34, 34, 0.6), rgba(34, 34, 34, 0.6)),
+    url("../img/categories/unisex.webp");
+}
+
+.categorie-card:hover .man-conver,
+.categorie-card:hover .woman-conver,
+.categorie-card:hover .unisex-conver {
+  transform: scale(1.08);
+}
+
+.categorie-title {
+  position: relative;
+  z-index: 1;
+  text-transform: uppercase;
+  color: #ede6e6;
+  font-size: 2.8rem;
+  font-weight: 900;
+  letter-spacing: -0.5px;
+  margin: 0;
+}
+
+.categorie-card a {
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+  color: #c8963e;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+  display: inline-block;
+  margin: 0;
+}
+
+.categorie-card a:hover,
+.categorie-card a:active {
+  color: #c9b4b3;
+}
 /***************************/
 /*******SERVICES************/
 /***************************/
@@ -460,6 +555,95 @@
   padding-top: 10rem;
   padding-bottom: 10rem;
   background-color: #ede6e6;
+}
+
+/*==================================
+MAPA
+==================================*/
+
+.section-map {
+  padding: 10rem 0;
+  background: #ede6e6;
+}
+
+.contact {
+  min-height: 90vh;
+  margin-top: 9rem;
+  background-image:
+    linear-gradient(rgba(15, 61, 86, 0.65), rgba(15, 61, 86, 0.65)),
+    url("../img/contact-hero.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.map-layout {
+  margin-top: 6rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 4rem;
+  align-items: stretch;
+}
+
+.map-container {
+  overflow: hidden;
+  border-radius: 2rem;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.08);
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 50rem;
+  border: none;
+}
+
+.location-card {
+  background: white;
+
+  padding: 4rem;
+  padding-top: 7rem;
+  border-radius: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.08);
+}
+
+.location-card h3 {
+  font-size: 3rem;
+  color: #4b0402;
+  margin-bottom: 2rem;
+}
+
+.location-card > p {
+  font-size: 1.7rem;
+  color: #0f0100;
+  margin-bottom: 3rem;
+  line-height: 1.8;
+}
+
+.location-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.location-info p {
+  font-size: 1.6rem;
+  color: #555;
+}
+
+.location-info strong {
+  color: #4b0402;
+}
+
+.btn-low {
+  background-color: #cbecf9;
 }
 
 /**************************/

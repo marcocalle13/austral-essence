@@ -303,6 +303,10 @@
     width: 100%;
   }
 
+  .container-categories {
+    flex-direction: column;
+  }
+
   /* ✅ NO MODIFICAMOS el tamaño del btn */
   /* .btn {
     font-size: 2rem;
@@ -351,11 +355,25 @@
     font-size: 1.6rem;
     padding: 1.2rem 2rem;
   }
+
+  .map-layout {
+    grid-template-columns: 1fr;
+    margin-top: 4rem;
+  }
+
+  .container-categories {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 75em) {
   .no-flexbox-gap .main-nav-list li:not(:last-child) {
     margin-right: 3.2rem;
+  }
+
+  .map-layout {
+    grid-template-columns: 1fr;
+    margin-top: 4rem;
   }
 }
 
@@ -363,5 +381,14 @@
   .no-flexbox-gap .main-nav-list li:not(:last-child) {
     margin-right: 0;
     margin-bottom: 4.8rem;
+  }
+
+  .map-layout {
+    grid-template-columns: 1fr;
+    margin-top: 4rem;
+  }
+
+  .container-categories {
+    flex-direction: column;
   }
 }
